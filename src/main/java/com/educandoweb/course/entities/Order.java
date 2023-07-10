@@ -31,7 +31,7 @@ public class Order implements Serializable {
 	private Integer orderStatus;
 	
 	@ManyToOne //Como um user pode ter muitos orders, essa anotação faz a associação de chave estrangeira com user
-	@JoinColumn(name = "client_id")
+	@JoinColumn(name = "client_id")//na tabela pedidos do db vai ter uma chave estrangeira com nome client_id que vai conter o id do user associado a esse pedido
 	private User client;
 	
 	public Order() {
