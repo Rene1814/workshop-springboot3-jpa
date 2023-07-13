@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
 //Anotações do JPA que instruem o JPA como ele vai converter os objetos dessa classe para o modelo relacional
 @Entity
 @Table(name = "tb_user")
-public class User implements Serializable{
+public class User implements Serializable{ //Serializable faz com que o objeto seja transformado em cadeias de bytes pra trafegar na rede
 	private static final long serialVersionUID = 1L;
 	
 	@Id //Essa anotação diz que o atributo id é a chave primária
@@ -33,7 +33,6 @@ public class User implements Serializable{
 	private List<Order> orders = new ArrayList<>();
 	
 	public User() {
-		
 	}
 
 	public User(Long id, String name, String email, String phone, String password) {

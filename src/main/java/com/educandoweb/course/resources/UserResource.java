@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.services.UserService;
 
-@RestController // essa anotação diz que essa classe é um recurso web que é implementado por um
-				// controlador rest
+@RestController // essa anotação diz que essa classe é um recurso web que é implementado por um controlador rest
 @RequestMapping(value = "/users") //o q vai entre aspas é usado no navegador com localhost:8080 para o postman
 public class UserResource {
 
